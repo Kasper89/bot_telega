@@ -72,10 +72,8 @@ def bot(text): # функция бота
     else:
         return random.choice(BOT_CONFIG['default_answers']) # 3. если не удалось, ответить заглушкой
 
-
 question = ''
 while question not in ['выход', 'выключайся']:
-
     question = input()
     answer = bot(question)
     print(answer)
